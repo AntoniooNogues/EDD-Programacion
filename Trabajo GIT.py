@@ -7,12 +7,22 @@ def actividad_6():
          (1, 1))
     resultado = [[0, 0], [0, 0]]
     for i in range(len(a)):
-        for j in range(len(b[0])):
+        for l in range(len(b[0])):
             for k in range(len(b)):
-                resultado[i][j] += a[i][k]*b[k][j]
+                resultado[i][l] += a[i][k]*b[k][l]
     for i in range(len(resultado)):
         resultado[i]= tuple(resultado[i])
     resultado = tuple(resultado)
     for i in range(len(resultado)):
         print(resultado[i])
-    #Este comentario se tiene que eliminar
+
+
+def ejercicio3_(palabra):
+    #Crea una función que reciba una cadena y cuente cuántas letras "a" contiene.
+    palabra_mayusculas = palabra.upper()
+
+    contador_a = palabra.count("a")
+    contador_A = palabra.count ("A")
+    contador_total = contador_a + contador_A
+
+    return contador_total
