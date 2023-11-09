@@ -16,3 +16,4 @@ def actividad_6():
     for i in range(len(resultado)):
         print(resultado[i])
     #Este comentario se tiene que eliminar
+
