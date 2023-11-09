@@ -11,8 +11,9 @@ def actividad_6():
             for k in range(len(b)):
                 resultado[i][j] += a[i][k]*b[k][j]
     for i in range(len(resultado)):
-        resultado[i]= tuple(resultado[i])
+        resultado[i] = tuple(resultado[i])
     resultado = tuple(resultado)
     for i in range(len(resultado)):
         print(resultado[i])
+    print("Todo es un éxito")
     #Este comentario se tiene que eliminar
